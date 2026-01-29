@@ -1,16 +1,11 @@
 
-import { success } from "better-auth";
 import { db } from "../db";
-import { skills , users_profile } from "../db/schema";
-import { eq , and  } from "drizzle-orm";
+import { skills  } from "../db/schema";
+import { eq   } from "drizzle-orm";
+import { getProfileId } from "../util/profileId";
 
 
-const getProfileId = async (userId: string) => {
-  const profile = await db.query.users_profile.findFirst({
-    where: eq(users_profile.user_id, userId),
-  });
-  return profile?.id;
-};
+
 
 export const AddSkills = async (c : any) => {
     const user = c.get("user") ;
