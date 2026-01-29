@@ -15,7 +15,7 @@ CREATE TABLE "certifications" (
 --> statement-breakpoint
 CREATE TABLE "document" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
-	"user_id" uuid NOT NULL,
+	"user_id" text NOT NULL,
 	"content_id" uuid NOT NULL,
 	"document_type" "document_type" DEFAULT 'PDF' NOT NULL,
 	"file_size" varchar(10) DEFAULT '0b' NOT NULL,
@@ -48,7 +48,7 @@ CREATE TABLE "experience" (
 --> statement-breakpoint
 CREATE TABLE "generated_content" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
-	"user_id" uuid NOT NULL,
+	"user_id" text NOT NULL,
 	"user_profile" uuid NOT NULL,
 	"jobs_id" uuid NOT NULL,
 	"content_type" text NOT NULL,
@@ -64,7 +64,7 @@ CREATE TABLE "generated_content" (
 --> statement-breakpoint
 CREATE TABLE "jobs" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
-	"user_id" uuid NOT NULL,
+	"user_id" text NOT NULL,
 	"source_type" "source_type" DEFAULT 'Text' NOT NULL,
 	"link" varchar(255),
 	"title" varchar(255) NOT NULL,
@@ -87,7 +87,7 @@ CREATE TABLE "skills" (
 );
 --> statement-breakpoint
 CREATE TABLE "users" (
-	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"id" text PRIMARY KEY NOT NULL,
 	"full_name" varchar(255) NOT NULL,
 	"email" varchar(255) NOT NULL,
 	"account_status" "account_status" DEFAULT 'active' NOT NULL,
@@ -99,12 +99,12 @@ CREATE TABLE "users" (
 --> statement-breakpoint
 CREATE TABLE "profile" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
-	"user_id" uuid NOT NULL,
+	"user_id" text NOT NULL,
 	"bio" text,
 	"profile_link" varchar(255),
 	"github_link" varchar(255),
 	"langugae" text,
-	"updated_at" timestamp
+	"updated_at" timestamp DEFAULT now()
 );
 --> statement-breakpoint
 CREATE TABLE "account" (

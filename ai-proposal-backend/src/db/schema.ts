@@ -10,7 +10,7 @@ export const document_type_enum=p.pgEnum("document_type" , ["PDF" , "DOCX" , "XM
 
 
 export const usersTable = p.pgTable("users", {
-  id: p.uuid("id").primaryKey().defaultRandom(),
+  id: p.text("id").primaryKey().notNull(),
   full_name: p.varchar({ length: 255 }).notNull(),
   email: p.varchar({ length: 255 }).notNull().unique(),
   account_status:account_status_enum("account_status").default("active").notNull(),
@@ -25,12 +25,12 @@ export const usersTable = p.pgTable("users", {
 
 export const users_profile=p.pgTable("profile" , {
   id: p.uuid("id").primaryKey().defaultRandom().notNull(),
-  user_id: p.uuid("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
+  user_id: p.text("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
   bio:p.text("bio"),
   profile_link:p.varchar("profile_link",{length:255}),
   github_link:p.varchar("github_link",{length:255}),
   language:p.text("langugae"),
-  updated_at:p.timestamp("updated_at"),
+  updated_at:p.timestamp("updated_at").defaultNow(),
 
 
 });
@@ -85,7 +85,7 @@ export const certifications = p.pgTable("certifications", {
 
 export const jobs = p.pgTable("jobs" , {
   id: p.uuid("id").primaryKey().defaultRandom().notNull(),
-  user_id: p.uuid("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
+  user_id: p.text("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
   source_type:source_type_enum("source_type").default("Text").notNull(),
   source_link:p.varchar("link" , {length:255}),
   title:p.varchar("title" , {length:255}).notNull(),
@@ -101,7 +101,7 @@ export const jobs = p.pgTable("jobs" , {
 
 export const generated_contents=p.pgTable("generated_content"  , {
   id: p.uuid("id").primaryKey().defaultRandom().notNull(),
-  user_id: p.uuid("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
+  user_id: p.text("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
   user_profile:p.uuid("user_profile").notNull().references(()=>users_profile.id , { onDelete: "cascade" }),
   jobs_id:p.uuid("jobs_id").notNull().references(()=>jobs.id , {onDelete:"cascade" }),
   content_type:p.text("content_type").notNull(),
@@ -119,7 +119,7 @@ export const generated_contents=p.pgTable("generated_content"  , {
 
 export const documents = p.pgTable("document" , {
   id:p.uuid("id").primaryKey().defaultRandom().notNull(),
-  user_id: p.uuid("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
+  user_id: p.text("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
   content_id:p.uuid("content_id").notNull().references(()=>generated_contents.id , {onDelete : "cascade"}),
   document_type:document_type_enum("document_type").default("PDF").notNull(),
   file_size:p.varchar("file_size" , {length:10}).default("0b").notNull(),

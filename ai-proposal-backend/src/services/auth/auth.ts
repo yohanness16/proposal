@@ -51,17 +51,20 @@ export const auth = betterAuth({
     ] ,
 
     databaseHooks: {
-    user: {
-      create: {
-        after: async (user) => {
-          // This code runs automatically after a user signs up
-          await db.insert(sch.usersTable).values({
-            full_name: user.name,
-            email: user.email,
-            betterAuthUserId: user.id, 
-            account_status: "active",
-          });
-        },
+  user: {
+    create: {
+      after: async (user) => {
+        await db.insert(sch.usersTable).values({
+          id: user.id, // 👈 ADD THIS LINE
+          full_name: user.name,
+          email: user.email,
+          betterAuthUserId: user.id, 
+          account_status: "active",
+        });
+      },
+   
+  
+
       },
     },
 
