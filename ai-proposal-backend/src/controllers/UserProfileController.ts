@@ -42,7 +42,6 @@ export const ReadProfile = async(c: Context)=>{
     if(!data) {
         return c.json({error : "profile not found"} , 404)
     }
-
     return c.json({ success : true ,data}, 201);
 };
 

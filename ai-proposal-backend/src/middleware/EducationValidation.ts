@@ -9,9 +9,13 @@ export const educationValidation = createInsertSchema(education , {
     start_date: z.preprocess((arg) => typeof arg === "string" ? new Date(arg) : arg, z.date()),
     end_date: z.preprocess((arg) => typeof arg === "string" ? new Date(arg) : arg, z.date()).optional(),
     description : (s)=>s.min(10 , "description should be at least 10 characters ") ,    
-}) .omit({
+}).omit({
     id:true,
     profile_id:true ,   
-});
+}).refine((data)=>!data.end_date || data.end_date >= data.start_date ,
+ {
+    message: "End date must be after start date",
+    path: ["end_date"],
+ });
 
 export const updateEducationSchema=educationValidation.partial();

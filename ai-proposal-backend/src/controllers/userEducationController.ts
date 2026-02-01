@@ -49,7 +49,7 @@ export const updateEducation = async (c: any) => {
     return c.json({ success: true, data } , 201);
   };
   
-  export const DeleteEducation = async (c : any)=>{
+export const DeleteEducation = async (c : any)=>{
       const id = c.req.param("id");
       await db.delete(education).where(eq(education.id , id));
       return c.json({ success: true, message: "Education deleted" } , 201);

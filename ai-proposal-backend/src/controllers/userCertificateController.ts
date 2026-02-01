@@ -47,7 +47,7 @@ export const updateUserCertificate = async (c: any) => {
     return c.json({ success: true, data } , 200);
   };
   
-  export const DeleteUserCertificate = async (c : any)=>{
+export const DeleteUserCertificate = async (c : any)=>{
       const id = c.req.param("id");
       await db.delete(certifications).where(eq(certifications.id , id));
       return c.json({ success: true, message: "Certificate deleted" } , 200);
