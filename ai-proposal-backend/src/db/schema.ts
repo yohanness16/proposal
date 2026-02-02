@@ -93,6 +93,7 @@ export const jobs = p.pgTable("jobs" , {
   company_name:p.varchar("company_name" , {length:255}),
   requirment:p.json("requirments").default({}).notNull(),
   responsibility:p.text("responsibility").notNull(),
+  deadline:p.timestamp("deadline").notNull(),
   budget:p.varchar('budget' , {length:10}),
   location:p.text("location").default("remote").notNull(),
   searched_at:p.timestamp("searched_at").defaultNow().notNull(),
