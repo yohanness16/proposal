@@ -1,7 +1,7 @@
-const deadline = new Date(Date.now() + 24 * 60 * 60 * 1000);
+export type SourceType = "website_link" | "Text" | "pdf";
 
 export type jobData = {
-source_type: "website_link" | "Text" | "pdf";
+source_type:SourceType;
   source_link?: string;
   title: string;
   description: string;

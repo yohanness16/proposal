@@ -1,11 +1,11 @@
-// src/services/jobs/extractor/JobExtractor.ts
+
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export class JobExtractor {
   private genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
   async extract(rawText: string) {
-    const model = this.genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
+    const model = this.genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
     const prompt = `
       You are a professional recruitment parser. I will give you a messy text scrape from a job board. 

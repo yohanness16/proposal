@@ -181,3 +181,12 @@ ALTER TABLE "two_factor" ADD CONSTRAINT "two_factor_user_id_user_id_fk" FOREIGN 
 CREATE INDEX "account_userId_idx" ON "account" USING btree ("user_id");--> statement-breakpoint
 CREATE INDEX "session_userId_idx" ON "session" USING btree ("user_id");--> statement-breakpoint
 CREATE INDEX "verification_identifier_idx" ON "verification" USING btree ("identifier");
+-- 1. Fix the 'link' column (Rename and increase length)
+ALTER TABLE "jobs" RENAME COLUMN "link" TO "source_link";
+ALTER TABLE "jobs" ALTER COLUMN "source_link" TYPE varchar(500);
+
+-- 2. Fix the 'requirment' column (Rename to match your code)
+ALTER TABLE "jobs" RENAME COLUMN "requirments" TO "requirment";
+
+-- 3. Fix the 'budget' column (Increase length for AI strings)
+ALTER TABLE "jobs" ALTER COLUMN "budget" TYPE varchar(100);

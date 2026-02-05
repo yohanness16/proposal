@@ -3,7 +3,7 @@ import { JobSourceFactory } from "../services/jobs/jobSouecrFactory";
 async function runTest() {
   console.log("🔍 Testing Full Pipeline: Scraper -> AI Extractor -> Factory...");
   
-  const testUrl = "https://remoteok.com/remote-jobs/remote-google-cloud-platform-engineer-lightfeather-io-llc-1130011"; 
+  const testUrl = "https://www.freelancer.com/projects/python/Senior-Backend-Engineer-Large-Scale/details"; 
 
   try {
     const source = JobSourceFactory.createSource("website_link");

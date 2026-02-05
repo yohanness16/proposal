@@ -87,14 +87,14 @@ export const jobs = p.pgTable("jobs" , {
   id: p.uuid("id").primaryKey().defaultRandom().notNull(),
   user_id: p.text("user_id").notNull().references(()=>usersTable.id , { onDelete: "cascade" }),
   source_type:source_type_enum("source_type").default("Text").notNull(),
-  source_link:p.varchar("link" , {length:255}),
   title:p.varchar("title" , {length:255}).notNull(),
   description:p.text("description").notNull(),
   company_name:p.varchar("company_name" , {length:255}),
-  requirment:p.json("requirments").default({}).notNull(),
   responsibility:p.text("responsibility").notNull(),
   deadline:p.timestamp("deadline").notNull(),
-  budget:p.varchar('budget' , {length:10}),
+  source_link: p.varchar("source_link", { length: 500 }), // Change "link" to "source_link"
+  requirment: p.json("requirment").default({}).notNull(), // Change "requirments" to "requirment"
+  budget: p.varchar("budget", { length: 100 }),
   location:p.text("location").default("remote").notNull(),
   searched_at:p.timestamp("searched_at").defaultNow().notNull(),
 
