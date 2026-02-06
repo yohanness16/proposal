@@ -1,0 +1,93 @@
+
+{
+  "win_rules": [
+    {
+      "rule_number": 1,
+      "rule_description": "Tailor proposals to the priorities and concerns of sponsors, clients, or decision-makers. Understanding the audience is critical for presenting information at the right level of detail."
+    },
+    {
+      "rule_number": 2,
+      "rule_description": "Clearly define scope, goals, deliverables, success criteria, and assumptions to align stakeholders around a shared understanding of what will be delivered."
+    },
+    {
+      "rule_number": 3,
+      "rule_description": "Estimate costs, resources, and timelines to allow organizations to compare alternatives, evaluate feasibility, and reduce risk before committing resources."
+    },
+    {
+      "rule_number": 4,
+      "rule_description": "In competitive contexts, use proposals to support bids, funding requests, and contract awards."
+    },
+    {
+      "rule_number": 5,
+      "rule_description": "Internally, formalize ideas into actionable plans, serve as a reference for decisions and governance, and enable prioritization by showing how the project fits strategic objectives."
+    },
+    {
+      "rule_number": 6,
+      "rule_description": "Use proposals at key decision points, before time, money, or project resources are committed, to provide structure for evaluation, approval, or alignment."
+    },
+    {
+      "rule_number": 7,
+      "rule_description": "When responding to a Request for Proposal (RFP), adhere to the RFP guidelines of the project owner."
+    },
+    {
+      "rule_number": 8,
+      "rule_description": "For unsolicited proposals, consider open bids or opportunities where proposals are accepted without a formal request."
+    },
+    {
+      "rule_number": 9,
+      "rule_description": "When creating informal proposals, respond to direct requests from clients without an RFP."
+    },
+    {
+      "rule_number": 10,
+      "rule_description": "For renewal proposals, highlight past positive results and future benefits to past customers."
+    },
+    {
+      "rule_number": 11,
+      "rule_description": "For continuation proposals, communicate project progress to investors and stakeholders."
+    },
+    {
+      "rule_number": 12,
+      "rule_description": "For supplemental proposals, communicate the need for additional resources during the project execution phase to investors."
+    },
+    {
+      "rule_number": 13,
+      "rule_description": "Include a brief and to-the-point executive summary that outlines the project and its business justification, touching on information to follow."
+    },
+    {
+      "rule_number": 14,
+      "rule_description": "Provide a concise project background (usually one page) explaining the problem to solve or opportunity to seize, with a short history of the business and its fit for the project."
+    },
+    {
+      "rule_number": 15,
+      "rule_description": "State the project vision and specific success criteria, including the metrics used to measure success and how it aligns with company goals."
+    },
+    {
+      "rule_number": 16,
+      "rule_description": "Detail potential risks and outline strategies for mitigation and for taking advantage of positive risks."
+    },
+    {
+      "rule_number": 17,
+      "rule_description": "Define the project scope, including all necessary work and how it will be executed, and detail the various deliverables."
+    },
+    {
+      "rule_number": 18,
+      "rule_description": "Describe the project approach and contract types (e.g., lump sum, cost plus, time and materials) and delivery methods."
+    },
+    {
+      "rule_number": 19,
+      "rule_description": "Outline the expected benefits of successful project completion."
+    },
+    {
+      "rule_number": 20,
+      "rule_description": "List all required resources, such as labor, materials, and equipment."
+    },
+    {
+      "rule_number": 21,
+      "rule_description": "Detail all project costs, including resources, and set up a budget to show how these costs will be spent."
+    },
+    {
+      "rule_number": 22,
+      "rule_description": "Lay out the project timeline from start to finish, including the duration of each phase and its tasks."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+
+{
+  "win_rules": [
+    {
+      "rule_id": "freelance_advice_clarity_conciseness",
+      "description": "The advice should be clear and concise, easy for a freelance professional to understand and implement. Avoid jargon or overly complex explanations.",
+      "keywords": ["clear", "concise", "understandable", "implementable", "simple"]
+    },
+    {
+      "rule_id": "freelance_advice_actionability",
+      "description": "The advice should provide actionable steps or strategies that freelancers can directly apply to their work. It should not be purely theoretical.",
+      "keywords": ["actionable", "practical", "steps", "strategies", "apply"]
+    },
+    {
+      "rule_id": "freelance_advice_relevance",
+      "description": "The advice should be relevant to the current freelance landscape and address common challenges or opportunities faced by freelancers.",
+      "keywords": ["relevant", "current", "freelance market", "challenges", "opportunities"]
+    },
+    {
+      "rule_id": "freelance_advice_positivity_encouragement",
+      "description": "The advice should generally be positive and encouraging, fostering a sense of confidence and motivation in freelancers.",
+      "keywords": ["positive", "encouraging", "motivational", "confidence", "supportive"]
+    },
+    {
+      "rule_id": "freelance_advice_specificity",
+      "description": "Where possible, the advice should be specific, providing examples or details to illustrate the points being made.",
+      "keywords": ["specific", "detailed", "examples", "illustration"]
+    },
+    {
+      "rule_id": "freelance_advice_ethical_soundness",
+      "description": "The advice should promote ethical practices within the freelance profession.",
+      "keywords": ["ethical", "integrity", "professionalism"]
+    },
+    {
+      "rule_id": "freelance_advice_avoidance_of_overgeneralization",
+      "description": "The advice should avoid sweeping generalizations that may not apply to all freelancers or all situations.",
+      "keywords": ["avoid generalizations", "nuance", "context-aware"]
+    },
+    {
+      "rule_id": "freelance_advice_focus_on_client_value",
+      "description": "The advice should emphasize the importance of delivering value to clients, as this is fundamental to freelance success.",
+      "keywords": ["client value", "customer satisfaction", "deliver results"]
+    },
+    {
+      "rule_id": "freelance_advice_financial_literacy",
+      "description": "The advice should touch upon aspects of financial management, pricing, and profitability for freelancers.",
+      "keywords": ["financial management", "pricing", "profitability", "income"]
+    },
+    {
+      "rule_id": "freelance_advice_skill_development",
+      "description": "The advice should encourage continuous learning and skill development relevant to the freelance niche.",
+      "keywords": ["skill development", "learning", "growth", "expertise"]
+    }
+  ]
+}

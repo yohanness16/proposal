@@ -1,0 +1,65 @@
+
+{
+  "win_rules": [
+    {
+      "rule_id": 1,
+      "rule_name": "Start with a warm salutation",
+      "description": "Begin your proposal with a friendly greeting, ideally using the prospect's first name if known (e.g., 'Hi Mary' or 'Hello Mario')."
+    },
+    {
+      "rule_id": 2,
+      "rule_name": "Introduce yourself and mention how you found the job",
+      "description": "Clearly state who you are, your profession, and your experience level. Explain how you discovered their job posting (e.g., 'I found your job posting on LinkedIn'). This helps the prospect feel a connection."
+    },
+    {
+      "rule_id": 3,
+      "rule_name": "Show genuine interest in the job",
+      "description": "Express enthusiasm for the specific job opportunity, highlighting why it stands out to you and how it aligns with your skills and experience. Avoid generic statements."
+    },
+    {
+      "rule_id": 4,
+      "rule_name": "Demonstrate understanding of job requirements",
+      "description": "Show that you have read and understood the client's needs by summarizing or referencing key aspects of the job description. This proves you've paid attention."
+    },
+    {
+      "rule_id": 5,
+      "rule_name": "Highlight your willingness and ability to fulfill requirements",
+      "description": "Assert your readiness and capability to meet the job's demands. This is where you can start to 'boast' about your skills and how you can tackle the project."
+    },
+    {
+      "rule_id": 6,
+      "rule_name": "Back up claims with relevant skills and experience",
+      "description": "Provide concrete evidence of your abilities by mentioning past clients, projects, and how your work positively impacted their businesses. Quantifiable results are highly valuable."
+    },
+    {
+      "rule_id": 7,
+      "rule_name": "Offer a promise, security, or attractive offer",
+      "description": "Include a compelling offer or guarantee that makes it difficult for the client to ignore you. This could be a satisfaction guarantee, a special introductory offer, or a promise of quality and originality."
+    },
+    {
+      "rule_id": 8,
+      "rule_name": "Express eagerness for positive feedback",
+      "description": "Conclude by stating that you look forward to their positive response. This conveys proactivity and a serious attitude towards the work."
+    },
+    {
+      "rule_id": 9,
+      "rule_name": "Close with a professional salutation",
+      "description": "End your proposal with a standard professional closing like 'Best regards,' 'Sincerely,' or 'Kind regards.'"
+    },
+    {
+      "rule_id": 10,
+      "rule_name": "Attach relevant documents",
+      "description": "Always include your CV, sample articles, or links to your portfolio to provide further evidence of your capabilities."
+    },
+    {
+      "rule_id": 11,
+      "rule_name": "Write original proposals, avoid templates",
+      "description": "Personalize each proposal to the specific job and client. Avoid copy-pasting generic templates, as humans can tell the difference and it significantly reduces your chances of success."
+    },
+    {
+      "rule_id": 12,
+      "rule_name": "Appeal to human emotions",
+      "description": "Recognize that humans are reading your proposals, not bots. Craft your message to evoke positive emotions such as excitement or confidence, rather than boredom or frustration."
+    }
+  ]
+}
