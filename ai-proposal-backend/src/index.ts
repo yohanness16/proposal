@@ -9,6 +9,7 @@ import educationRoute from "./route/userEducationRoute";
 import certificateRoute from "./route/userCertificateRoute";
 import jobRouter from "./route/jobRouter";
 import promptRouter from "./route/promptGeneratorRoute";
+import proposalRouter from "./route/proposalRouter";
 
 
 const app = new Hono();
@@ -37,5 +38,6 @@ app.route("/api/education", educationRoute);
 app.route("/api/certificates", certificateRoute);
 app.route("/api/job" , jobRouter);
 app.route("/api/promot" , promptRouter)
+app.route("/api/proposals" , proposalRouter);
 
 export default app;
